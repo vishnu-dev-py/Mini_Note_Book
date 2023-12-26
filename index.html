@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book_note</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="navbar">
+    <h1>Book Note</h1>
+</div>
+
+<div class="container">
+    <div class="book-container">
+        <h2>Full Stack Development</h2>
+        <h4>Vicky</h4>
+        <p>"John is a highly skilled software engineer with expertise in full-stack development, seamlessly integrating
+            front-end and back-end technologies to create robust and efficient web applications."</p>
+        <button onclick="delete_book(event)">Delete</button>
+    </div>
+
+</div>
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add Book</h2>
+    <form>
+        <input type="text" placeholder="Book Title" id="book-title-inp">
+        <input type="text" placeholder="Book Author" id="book-author-inp">
+        <textarea placeholder="Short Description" id="book-description"></textarea>
+        <button id="add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+    </form>
+</div>
+
+<button class="add-button" id="add-popup-button">+</button>
+
+
+</body>
+<script src="script.js"></script>
+</html>
